@@ -19,8 +19,8 @@ module.exports = {
     const Embed = new Discord.MessageEmbed()
     .setColor(Color)
     .setThumbnail(client.user.displayAvatarURL({ format: "png" }))
-    .setTitle(`${client.user.username} Help!`)
-    .setDescription(`Type The Following Command For A Specific Command Information -\n**${Prefix}Help <Command Name>**\n\n**🎶 Music**\n${Music}\n\n**🔮 Other**\n${Other}\n\n**🕹 Config**\n${Config}\n\nUseful Links:\nSupport Server - [Click Me](${Support || "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PLahKLy8pQdCM0SiXNn3EfGIXX19QGzUG3"})\nBot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8)\nDonate: [Click Me](${Donate})\n\nThank You So Much <3`)
+    .setTitle(`${client.user.username}`)
+    .setDescription(`\n**💠 PREFIX   BOT    b/**\n\n**🎵 MUSIC**\n${Music}\n\n**💠 OTHER**\n${Other}\n\n**💠 CONFIG**\n${Config}\n\                                                ☞︎ [SUPPORT](${Support || ""})\n                             ☞︎ [INVITE](https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8)`)
     .setFooter(`Requested By ${message.author.username}`)
     .setTimestamp();
     
