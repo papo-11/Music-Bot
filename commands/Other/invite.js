@@ -10,15 +10,15 @@ module.exports = {
   usage: "Invite",
   run: async (client, message, args) => {
     
-    const Invite = `https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`, Owne = `<@${Owner}>`, Dev = `Legendary Emoji#1742`;
+    const Invite = `https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`, Owne = `<@731952429238714378>`, Dev = `<@788812460303450112>`;
     
     const Embed = new Discord.MessageEmbed()
     .setColor(Color)
-    .setTitle("Thanks")
-    .addField("Invite Me", `[Click Me](${Invite})`, true)
-    .addField("Support Server", `[Click Me](${Support})`, true)
-    .addField("Owner", Owne, true)
-    .addField("Developer", Dev)
+    .setTitle("⚒Thanks")
+    .addField("⚒Invite Me", `[invite](${Invite})`, true)
+    .addField("⚒Support Server", `[support](${Support})`, true)
+    .addField("⚒Owner", Owne, true)
+    .addField("⚒Devloper", Dev)
     .setTimestamp();
     
     return message.channel.send(Embed).catch(() => message.channel.send("Invite Link - " + Invite));
